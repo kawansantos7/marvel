@@ -1,3 +1,7 @@
+html {
+    scroll-behavior: smooth;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -13,7 +17,15 @@ header {
     background-color: rgb(255, 10, 2);
     color: white;
     padding: 20px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
 }
 
 main {
@@ -28,13 +40,25 @@ main {
     background-color: rgb(239, 151, 151);
     align-items: center;
     justify-content: space-between;
-    margin-top: 30px;
+    margin-top: 20px;
     border-radius: 20px;
+}
+
+#introducao article {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 
 #introducao img {
     width: 350px;
     height: 350px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+#sobre, #lancamentos, #destaques {
+    margin-top: 40px;
 }
 
 #cards {
@@ -42,7 +66,7 @@ main {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
 .card {
@@ -56,18 +80,65 @@ main {
 .card img {
     width: 100%;
     border-radius: 20px;
-    height: 400px;
+    height: 300px;
     object-fit: cover;
     display: block;
     margin: 0 auto;
 }
 
+.card h3 {
+    margin-top: 10px;
+}
+
 .card p {
     margin-top: 10px;
+    font-weight: normal;
+}
+
+#curiosidades-principal {
+    background-color: white;
+    padding: 20px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+#curiosidades-principal article {
+    margin-bottom: 15px;
+}
+
+#curiosidades-principal img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+a {
+    color: white;
+    background-color: #e00606;
+    padding: 10px 15px;
     font-weight: bold;
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+a:hover {
+    color: white;
+    background-color: #720404;
 }
 
 h2 {
-    font-size: 50px;
-    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+    background-color: rgb(200, 200, 200);
 }
