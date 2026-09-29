@@ -101,16 +101,11 @@ main {
 
 a {
     color: white;
-    background-color: #e00606;
-    padding: 10px 15px;
+    background-color: red;
+    padding: 10px;
     font-weight: bold;
     display: inline-block;
     border-radius: 5px;
-}
-
-a:hover {
-    color: white;
-    background-color: #720404;
 }
 
 h2 {
